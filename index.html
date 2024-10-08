@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asos va Qo'shimcha</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="./img/Veranix.jpg">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h2><span class="sp">"Asos"</span> va <span class="sp">"Qo'shimcha"</span> mavzusida 15ta savol</h2>
+    <table>
+        <tr>
+            <th>#</th>
+            <th>Savol</th>
+            <th>Javob</th>
+        </tr>
+        <!-- Oson savollar (Yashil) -->
+        <tr class="easy">
+            <td>1</td>
+            <td>Asos nima?</td>
+            <td>
+                <button onclick="toggleAnswer('answer1')">Javobni ko'rish</button>
+                <span id="answer1" class="answer">Asos so'zning ma'nosini belgilaydi.</span>
+            </td>
+        </tr>
+        <tr class="easy">
+            <td>2</td>
+            <td>Qo'shimcha nima?</td>
+            <td>
+                <button onclick="toggleAnswer('answer2')">Javobni ko'rish</button>
+                <span id="answer2" class="answer">Qo'shimcha so'zga yangi ma'no qo'shadi.</span>
+            </td>
+        </tr>
+        <tr class="easy">
+            <td>3</td>
+            <td>Asos va qo'shimcha farqi nimada?</td>
+            <td>
+                <button onclick="toggleAnswer('answer3')">Javobni ko'rish</button>
+                <span id="answer3" class="answer">Asos so'zning negizi, qo'shimcha esa uning ma'nosini
+                    kengaytiradi.</span>
+            </td>
+        </tr>
+        <tr class="easy">
+            <td>4</td>
+            <td>Qo'shimcha qanday turlari bor?</td>
+            <td>
+                <button onclick="toggleAnswer('answer4')">Javobni ko'rish</button>
+                <span id="answer4" class="answer">So'z yasovchi va shakl yasovchi qo'shimchalar.</span>
+            </td>
+        </tr>
+        
+
+        <!-- Qiyin savollar (Qizil) -->
+        <tr class="hard">
+            <td>5</td>
+            <td>Asosning ma'nosiga qanday so'zlar ta'sir ko'rsatadi?</td>
+            <td>
+                <button onclick="toggleAnswer('answer6')">Javobni ko'rish</button>
+                <span id="answer6" class="answer">Asosga qo'shilgan qo'shimchalar va kontekst ta'sir ko'rsatadi.</span>
+            </td>
+        </tr>
+        <tr class="hard">
+            <td>6</td>
+            <td>Qo'shimchalar yordamida so'zlarning ma'nosi qanday o'zgarishi mumkin?</td>
+            <td>
+                <button onclick="toggleAnswer('answer7')">Javobni ko'rish</button>
+                <span id="answer7" class="answer">Qo'shimchalar so'zni ko'plik, kichraytirish, hurmat, mensimaslik kabi
+                    ma'nolarga o'zgartirishi mumkin.</span>
+            </td>
+        </tr>
+        <tr class="easy">
+            <td>7</td>
+            <td>So'z yasovchi qo'shimcha nima qiladi?</td>
+            <td>
+                <button onclick="toggleAnswer('answer5')">Javobni ko'rish</button>
+                <span id="answer5" class="answer">Yangi so'z hosil qiladi.</span>
+            </td>
+        </tr>
+        <tr class="hard">
+            <td>8</td>
+            <td>Bir so'z bir nechta qo'shimcha olishi mumkinmi?</td>
+            <td>
+                <button onclick="toggleAnswer('answer8')">Javobni ko'rish</button>
+                <span id="answer8" class="answer">Ha, bir so'z bir nechta qo'shimcha olishi va murakkab ma'no hosil
+                    qilishi mumkin.</span>
+            </td>
+        </tr>
+        <tr class="hard">
+            <td>9</td>
+            <td>Asoslar va qo'shimchalar yordamida qanday yangi so'zlar yaratiladi?</td>
+            <td>
+                <button onclick="toggleAnswer('answer9')">Javobni ko'rish</button>
+                <span id="answer9" class="answer">Asoslar va qo'shimchalar yordamida yangi ot, sifat yoki fe'l kabi
+                    so'zlar hosil qilinadi.</span>
+            </td>
+        </tr>
+        <tr class="hard">
+            <td>10</td>
+            <td>So'z asoslari qanday turli kategoriyalarga bo'linadi?</td>
+            <td>
+                <button onclick="toggleAnswer('answer10')">Javobni ko'rish</button>
+                <span id="answer10" class="answer">Asoslar ot, sifat, fe'l va boshqa kategoriyalarga bo'linadi.</span>
+            </td>
+        </tr>
+
+        <tr class="easy">
+            <td>11</td>
+            <td>Shakl yasovchi qo'shimcha nima qiladi?</td>
+            <td>
+                <button onclick="toggleAnswer('answer11')">Javobni ko'rish</button>
+                <span id="answer11" class="answer">So'zning shaklini o'zgartiradi.</span>
+            </td>
+        </tr>
+        <tr class="easy">
+            <td>12</td>
+            <td>“-lar” qo'shimchasi qanday qo'shimcha?</td>
+            <td>
+                <button onclick="toggleAnswer('answer12')">Javobni ko'rish</button>
+                <span id="answer12" class="answer">Ko'plik qo'shimchasi.</span>
+            </td>
+        </tr>
+        <tr class="easy">
+            <td>13</td>
+            <td>“-chi” qo'shimchasi qanday ma'no beradi?</td>
+            <td>
+                <button onclick="toggleAnswer('answer13')">Javobni ko'rish</button>
+                <span id="answer13" class="answer">Kasb yoki lavozim bildiradi.</span>
+            </td>
+        </tr>
+        <tr class="easy">
+            <td>14</td>
+            <td>“-lik” qo'shimchasi qanday qo'shimcha?</td>
+            <td>
+                <button onclick="toggleAnswer('answer14')">Javobni ko'rish</button>
+                <span id="answer14" class="answer">So'z yasovchi qo'shimcha.</span>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Barcha javoblarni ochish/yopish uchun tugma -->
+    <div class="mx">
+        <button onclick="toggleAllAnswers()" id="pres-key" class="clis">Barcha javoblarni ko'rsat/yashir</button>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
